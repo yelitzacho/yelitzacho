@@ -1,5 +1,15 @@
-.body {
-    background-color: #5B80AA;
+/*===Menu Hamburger===*/
+/*body {
+    background-color: #1D1D1D;
+}*/
+
+section{
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
 }
 
 label {
@@ -107,3 +117,18 @@ input:checked ~ .menu div {
     font-family: 'Pacifico', cursive;    
 }
 
+.slide{
+  width: 200px;
+  height: 200px;
+  background-image: url("http://www.informatica-hoy.com.ar/hardware-notebook-laptop/imagenes/Elegir-computadora-chicos_clip_image006.jpg");
+  position: relative;
+}
+
+.slide::before{
+  background-color: rgba(0, 0, 0, 0.37);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}

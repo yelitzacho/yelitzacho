@@ -1,49 +1,172 @@
-/*===Menu Hamburger===*/
-/*body {
-    background-color: #1D1D1D;
-}*/
+@font-face {
+  font-family: CooperHewitt;
+  src: url('icons/cooperhewitt_book.ttf');
+}
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.home{
+  background-image: url(../assets/web-design-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  filter: grayscale(100%);
+}
 
+.home::before{
+  background-color: rgba(0, 0, 0, 0.37);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.home div h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+.home div h6{
+	font-family: 'CooperHewitt';
+	letter-spacing: 0.3em;
+	text-align: center;
+}
+.about{
+	height: 100vh;
+	background-color: #fff;
+	color: #383838;
+	padding: 0 12%;
+}
+.about  h1{
+	font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+.about h6{
+	padding-top: 3%;
+	font-family: 'CooperHewitt';
+	letter-spacing: 0.1rem;
+	text-align: center;
+}
+#mobile-menu{
+  background: rgba(17,17,18,0.98);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#mobile-menu .menu-container .redes-sociales{
+	margin-top: 30%;
+}
+#mobile-menu .menu-container .redes-sociales a{
+	color: #383838;
+}
+#mobile-menu .menu-container ul li a:hover{
+	color: #fff;
+	line-height: 4rem;
+	border-bottom: 0.3rem solid #fff;
+	cursor: pointer;
+}
+#mobile-menu .menu-container .redes-sociales a i{
+	font-size: 1.5rem;
+	padding: 5%;
+}
+#mobile-menu .menu-container ul li{
+	list-style: none;
+	font-family: 'Playfair Display', serif;
+	font-size: 3rem;
+	line-height: 7rem;
+	font-weight: 700;
+}
+#mobile-menu .menu-container ul li a{
+	 color: #383838;
+}
+#mobile-menu div .icon-crosss{
+	 color: #fff;
+}
+#mobile-menu .menu-container .redes-sociales a i:hover{
+	font-size: 1.5rem;
+	color: #fff;
+	cursor: pointer;
+}
+#mobile-menu .icon-cross{
+	position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 1.5rem;
+	color: #383838;
+}
+#mobile-menu .icon-cross:hover{
+	color: #fff;
+	cursor: pointer;
+}
+
+.content-title{
+	z-index: 1;
+	/*z-index: 1;
+	width: 30vw;
+	height: 60vh;
+	background-color: #fff;*/
+}
+.content-title .icon-menu{
+	position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 1.5rem;
+	color: #fff;
+}
+.content-title .icon-menu:hover{
+	color: rgba(255, 255, 255, 0.45);
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*===Menu Hamburger===*/
 section{
   background-color: #3a3a3a;
   color: #fff;
 }
-
-h1{
-  font-family: 'Montserrat', sans-serif;
-}
-
 label {
     position: absolute;
     z-index: 1;
 }
-
 input {
     display: none;
 }
-
 input:checked ~ label {
     right: 0;
 }
-
 .burger {
     position: relative;
     top: 24px;
     cursor: pointer;
 }
-
 .burger g {
     stroke: #ffffff;
     transition: stroke 0.25s ease-in-out;    
 }
-
 .burger g:hover {
     stroke: darken(#ffffff, 20%);
 }
-
 input:checked ~ label .burger {
     opacity: 0;
 }
-
 .close {
     position: relative;
     top: 24px;

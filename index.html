@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 		<link rel="icon" type="image/png" sizes="16x16" href="img/logo.png">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
 		<link rel="stylesheet" href="css/icons/style.css">
@@ -14,57 +14,118 @@
 	</head>
 	<body>
 		<header>
-			<div id="logo">
-				<a href="#"></a>
-			</div>
-			<nav id="mobile-menu">
-				<div>
-					<span><i class="icon-cross"></i></span>
-				</div>
-				<div class="menu-container">
-					<ul>
-						<li>
-							<a href="#">About</a>
-						</li>
-						<li>
-							<a href="#">Portfolio</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
+			<nav class="mobile-menu">
+				<div class="navbar menu-container">
+					<div class="info-navbar flex">
+						<ul>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">PORTFOLIO</a></li>
+						<li><a href="#">CONTACT</a></li>
 					</ul>
 					<div class="redes-sociales">
 						<a href="https://twitter.com/YelitzaCho" target="_blank"><i class="icon-twitter"></i></a>
-						<a href="https://www.behance.net/yelitzacho" target="_blank"><i class="icon-instagram"></i></a>
+						<a href="https://www.behance.net/yelitzacho" target="_blank"><i class="icon-behance"></i></a>
 						<a href="https://dribbble.com/YelitzaCho" target="_blank"><i class="icon-dribbble"></i></a>
 						<a href="https://github.com/yelitzacho" target="_blank"><i class="icon-github"></i></a>
 					</div>
+					</div>
 				</div>
-			</nav>
-			<div id="deskot-menu"></div>
-			<nav class="menu">
-				<a href="#">ABOUT</a>
-				<a href="#">WORK</a>
-				<a href="#">CONTACT</a>
 			</nav>
 		</header>
-		<section class="home flex">
+		<div class="hamburguer-btn">
+		  <div class="hamburguer-btn-line hamburguer-btn-line-top"></div>
+		  <div class="hamburguer-btn-line hamburguer-btn-line-middle"></div>
+		  <div class="hamburguer-btn-line hamburguer-btn-line-bottom"></div>
+		</div>
+		<section id="home" class="home flex">
 			<div class="content-title flex">
-				<div>
-					<span><i class="icon-menu"></i></span>
-				</div>
 				<div class="">
-					<h1>Yelitza Choque</h1>
+					<h2>YELITZA CHOQUE</h2>
 					<h6>UX & GRAPHIC DESIGNER</h6>
 				</div>
 			</div>
 		</section>
 		<section class="about flex">
 			<div>
-				<h1>About me</h1>
-				<h6>UX Designer y diseñadora publicitaria. Con experiencia en metodologías agile y Learn UX. Apasionada del arte, los libros y la música. Siempre trato de enfocarme en aprender nuevas tecnologías, herramientas y estrategias que perfeccionen mis habilidades.</h6>
+				<h2>ABOUT ME</h2>
+				<h6>UX Designer y diseñadora publicitaria. Con experiencia en metodologías agile y Learn UX, apasionada del arte, los libros y la música. Siempre trato de enfocarme en aprender nuevas tecnologías, herramientas y estrategias que perfeccionen mis habilidades.</h6>
 			</div>
 		</section>
+		<section class="portfolio flex">
+			<!-- PORTFOLIO -->
+			<div id="portfolio" class="section">
+			  <div class="section-container">
+			    <div class="title">
+			      <h2>My Projects</h2>
+			    </div>
+			    <div class="thumbnails">
+			      <ul>
+			        <li>
+			          <a href="#" target="_blanc">
+			            <img src="//placehold.it/200?text=PLACEHOLDER" alt="placeholder" />
+			            <span>
+			              <h2>Title</h2>
+			              <p>Desc</p>
+			              <i class="fa fa-link"></i>
+			            </span>
+			          </a>
+			        </li>
+			        <li>
+			          <a href="#" target="_blanc">
+			            <img src="//placehold.it/200?text=PLACEHOLDER" alt="placeholder" />
+			            <span>
+			              <h2>Title</h2>
+			              <p>Desc</p>
+			              <i class="fa fa-link"></i>
+			            </span>
+			          </a>
+			        </li>
+			        <li>
+			          <a href="#" target="_blanc">
+			            <img src="//placehold.it/200?text=PLACEHOLDER" alt="placeholder" />
+			            <span>
+			              <h2>Title</h2>
+			              <p>Desc</p>
+			              <i class="fa fa-link"></i>
+			            </span>
+			          </a>
+			        </li>
+			        <li>
+			          <a href="#" target="_blanc">
+			            <img src="//placehold.it/200?text=PLACEHOLDER" alt="placeholder" />
+			            <span>
+			              <h2>Title</h2>
+			              <p>Desc</p>
+			              <i class="fa fa-link"></i>
+			            </span>
+			          </a>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- end-thumbnails -->
+
+			  </div>
+			  <!-- end-portfolio-container -->
+			</div>
+			<!-- end-home -->
+		</section>
+		<section class="contact flex">
+			<div class="content flex color-white">
+				<div>
+					<h2>CONTACT</h2>
+					<h6>yelitza.choque@gmail.com</h6>
+					<h6>984 590 415</h6>
+					<div class="redes-sociales">
+						<a href="https://www.behance.net/yelitzacho" target="_blank"><i class="icon-behance color-white"></i></a>
+						<a href="https://dribbble.com/YelitzaCho" target="_blank"><i class="icon-dribbble color-white"></i></a>
+						<a href="https://github.com/yelitzacho" target="_blank"><i class="icon-github color-white"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div>
+			<a class="button" href="#home"></a>
+		</div>
 		<script type="text/javascript" src="js/vendor/jquery.js"></script>
 		<script type="text/javascript" src="js/vendor/foundation.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>

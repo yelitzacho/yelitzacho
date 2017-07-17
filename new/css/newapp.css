@@ -1,0 +1,195 @@
+@import'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
+
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Ralewey/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: Raleway-Italic;
+  src: url(../fonts/Ralewey/Raleway-Italic.ttf);
+}
+@font-face {
+  font-family: Raleway-Bold;
+  src: url(../fonts/Ralewey/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: Raleway-SemiBold;
+  src: url(../fonts/Ralewey/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: Muli;
+  src: url(../fonts/Muli/Muli-Regular.ttf);
+}
+@font-face {
+  font-family: Muli-Italic;
+  src: url(../fonts/Muli/Muli-Italic.ttf);
+}
+@font-face {
+  font-family: Muli-Bold;
+  src: url(../fonts/Muli/Muli-Bold.ttf);
+}
+@font-face {
+  font-family: Muli-SemiBold;
+  src: url(../fonts/Muli/Muli-SemiBold.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0
+}
+body{
+  overflow: hidden;
+}
+#nav-fixed{
+  width: 40px;
+  top: 38%;
+  position: fixed;
+  left: 0;
+  z-index: 1000
+}
+#nav-fixed li{
+  height: 25px;
+  width: 25px;
+  background-color: #cacaca;
+  border-radius: 50%;
+  margin: 15px;
+  list-style: none;
+  position: relative;
+  transition: all 250ms ease;
+  color: #fff
+}
+#nav-fixed li span{
+  position: relative;
+  background: #a94442;
+  font-family: "Trebuchet MS",Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  height: 24px;
+  border-radius: 2px;
+  width: 90px;
+  text-align:center;
+  line-height: 24px;
+  margin-left: 40px;
+  top: -22px;
+  left: 4px;
+  display: block;
+  transition: all 250ms ease;
+  opacity: 0
+}
+#nav-fixed li span:after{
+  content: '';
+  position: absolute;
+  height: 9px;
+  width: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: -4px;
+  background: #a94442;
+  top: 8px
+}
+#nav-fixed li:hover span{
+  margin-left: 30px;
+  opacity: 1
+}
+#nav-fixed li label{
+  display: block;
+  cursor: pointer;
+  height: 20px;
+  width: 20px
+}
+#nav-fixed li label i.fa{
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 10px
+}
+.tab{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: all 1000ms ease;
+  padding: 30px 50px
+}
+.tab1{
+  background: #fff;
+  background-size: 100% 100%;
+  top: 0%
+}
+.tab2{
+  background: url(bg.png)#F90;
+  top: 100%
+}
+.tab3{
+  background: url(bg.png)#096;
+  top: 200%
+}
+.tab4{
+  background: url(bg.png)#603;
+  top: 300%
+}input[type="radio"]{
+  display: none
+}
+#nav-fixed li:hover,#tab1:checked~#nav-fixed li:nth-child(1),#tab2:checked~#nav-fixed li:nth-child(2),#tab3:checked~#nav-fixed li:nth-child(3),#tab4:checked~#nav-fixed li:nth-child(4){
+  background-color: #a94442
+}
+#tab1:checked~.tab1{top: 0%}
+#tab1:checked~.tab2{top: 100%}
+#tab1:checked~.tab3{top: 200%}
+#tab1:checked~.tab4{top: 300%}
+#tab2:checked~.tab1{top: -100%}
+#tab2:checked~.tab2{top: 0%}
+#tab2:checked~.tab3{top: 100%}
+#tab2:checked~.tab4{top: 200%}
+#tab3:checked~.tab1{top: -200%}
+#tab3:checked~.tab2{top: -100%}
+#tab3:checked~.tab3{top: 0%}
+#tab3:checked~.tab4{top: 100%}
+#tab4:checked~.tab1{top: -300%}
+#tab4:checked~.tab2{
+  top: -200%
+}
+#tab4:checked~.tab3{
+  top: -100%
+}
+#tab4:checked~.tab4{
+  top: 0%
+}
+.title{
+  font-family: 'Raleway', sans-serif;
+  width: 270px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+  color: #FFF;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 30px
+}
+.title:after{
+  width: 20%;
+  left: 40%;
+  bottom: 0;
+  position: absolute;
+  border: solid 4px #F60;
+  content: ''
+}
+.title:before{
+  width: 10px;
+  height: 10px;
+  background: #F60;
+  position: absolute;
+  content: '';
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  bottom: -5px;
+  left: 50%
+} 
+@media(max-width: 720px){
+  .tab{
+    padding: 10px 35px
+  }
+} 

@@ -1,0 +1,93 @@
+section {
+}
+section h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	color: #333;
+	margin-bottom: 40px;
+}
+section p{
+	font-family: 'Muli', sans-serif;
+	color: #333;
+	text-align: center;
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.row{
+	margin: 0 20px;
+}
+.dev-icon{
+	font-size: 60px;
+    line-height: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.dev-icon .tooltip-skills{
+	width: 125px;
+    height: 50px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    border-radius: 3px;
+    background-color: #3f3f3f;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    transform: translateX(-50%) scale(0);
+    transform-origin: bottom center;
+    transition: all .4s cubic-bezier(1,0,.4,1);
+}
+
+.dev-icon:hover i {
+    color: #3f3f3f;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.dev-icon:hover .tooltip-skills{
+    top: -70px;
+    transition: all .3s cubic-bezier(0,0,.2,1.4);
+    transform: translateX(-50%) scale(1);
+}
+.dev-icon .tooltip-skills:after {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid #3f3f3f;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -9px;
+    transform: translateX(-50%);
+}
+
+#fp-nav.right {
+    right: 4px ;
+	margin-top: -30px;
+}
+
+/*#3f3f3f
+#8d1919
+#b91b1b*/
+
+.fp-tableCell{
+	height: 80vh !important;
+}
+.transparent{
+	background-color: transparent;
+}
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none; 
+}
